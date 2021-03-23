@@ -15,11 +15,11 @@ If you are using the code/model/data provided here in a publication, please cons
 
 ### Precomputed segmentation maps
 
-We adopt a 5-fold cross validation to evaluate the proposed MiniSeg. The precomputed segmentation maps of five folds on four datasets are provided in the `[SegMaps](https://github.com/yun-liu/MiniSeg/tree/master/SegMaps)` folder.
+We adopt a 5-fold cross validation to evaluate the proposed MiniSeg. The precomputed segmentation maps of five folds on four datasets are provided in the [`SegMaps`](https://github.com/yun-liu/MiniSeg/tree/master/SegMaps) folder.
 
 ### Pretrained models
 
-The pretrained models of five folds on four datasets are provided in the `[Pretrained](https://github.com/yun-liu/MiniSeg/tree/master/Pretrained)` folder.
+The pretrained models of five folds on four datasets are provided in the [`Pretrained`](https://github.com/yun-liu/MiniSeg/tree/master/Pretrained) folder.
 
 ### Running the code
 
