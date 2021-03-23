@@ -15,12 +15,12 @@ If you are using the code/model/data provided here in a publication, please cons
 
 ### Precomputed segmentation maps
 
-We adopt a 5-fold cross validation to evaluate the proposed MiniSeg. The precomputed segmentation maps of five folds on four datasets are provided in the `[outputs](https://github.com/yun-liu/MiniSeg/tree/master/outputs)` folder.
+We adopt a 5-fold cross validation to evaluate the proposed MiniSeg. The precomputed segmentation maps of five folds on four datasets are provided in the `[SegMaps](https://github.com/yun-liu/MiniSeg/tree/master/SegMaps)` folder.
 
 ### Pretrained models
 
-The pretrained models of five folds on four datasets are provided in the `[results_MiniSeg_crossVal_mod80](https://github.com/yun-liu/MiniSeg/tree/master/results_MiniSeg_crossVal_mod80)` folder.
+The pretrained models of five folds on four datasets are provided in the `[Pretrained](https://github.com/yun-liu/MiniSeg/tree/master/Pretrained)` folder.
 
 ### Running the code
 
-The `train.py` script is for training, and the `test.py` script is for testing.
+We use Python 3.5, PyTorch 0.4.1, cuda 9.0, and numpy 1.17.3 to test the code. The `train.py` script is for training, and the `test.py` script is for testing.
