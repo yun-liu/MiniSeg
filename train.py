@@ -355,7 +355,7 @@ def main(args):
 
 if __name__ == '__main__':
     parser = ArgumentParser()
-    parser.add_argument('--data_dir', default="../datasets", help='Data directory')
+    parser.add_argument('--data_dir', default="./datasets", help='Data directory')
     parser.add_argument('--width', type=int, default=512, help='Width of RGB image')
     parser.add_argument('--height', type=int, default=512, help='Height of RGB image')
     parser.add_argument('--max_epochs', type=int, default=80, help='Max. number of epochs')
