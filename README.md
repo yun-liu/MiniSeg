@@ -19,6 +19,8 @@ We adopt a 5-fold cross validation to evaluate the proposed MiniSeg. The precomp
 
 ### Testing and training
 
+Before running the code, you should first put the images, masks and data lists to corresponding datasets folder. For examples, for COVID-19-CT100 dataset, the images are put in the /datasets/COVID-19-CT100/tr_im folder, the masks are put in the /datasets/COVID-19-CT100/tr_mask folde, and the tranining/testing data lists are put in the folder of /datasets/COVID-19-CT100/dataList.
+
 #### Testing MiniSeg
 
 #### Training MiniSeg
