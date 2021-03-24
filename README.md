@@ -23,7 +23,13 @@ Before running the code, you should first put the images, masks and data lists t
 
 #### Testing MiniSeg
 
+For example, we use the following command to test MiniSeg on the COVID-19-CT100 dataset:
+python test.py --model_name MiniSeg --data_name CT100 --pretrained results_MiniSeg_crossVal_mod80/ --savedir ./outputs
+The generated segmentation maps of five folds will be outputted into the folder of ./outputs/CT100/MiniSeg/crossVal0~crossVal4, respectively.
+
 #### Training MiniSeg
+
+python train.py --max_epochs 80 --batch_size 5 --lr 1e-3 --lr_mode poly --savedir ./results_MiniSeg_crossVal --model_name MiniSeg --data_name CT100
 
 ### Pretrained models
 
