@@ -19,7 +19,9 @@ We adopt a 5-fold cross validation to evaluate the proposed MiniSeg. The precomp
 
 ### Testing and training
 
+#### Testing MiniSeg
 
+#### Training MiniSeg
 
 ### Pretrained models
 
