@@ -25,17 +25,19 @@ The pretrained models of five folds on four datasets are provided in the [`Pretr
 
 We use Python 3.5, PyTorch 0.4.1, cuda 9.0, and numpy 1.17.3 to test the code. The `train.py` script is for training, and the `test.py` script is for testing.
 
-Before running the code, you should first put the images, masks and data lists to corresponding datasets folder. For examples, for COVID-19-CT100 dataset, the images are put in the /datasets/COVID-19-CT100/tr_im folder, the masks are put in the /datasets/COVID-19-CT100/tr_mask folde, and the tranining/testing data lists are put in the folder of /datasets/COVID-19-CT100/dataList.
+Before running the code, you should first put the images, masks, and data lists into the `datasets` folder. For examples, for COVID-19-CT100 dataset, the images are put in the `$ROOT_DIR/datasets/COVID-19-CT100/tr_im` folder, the masks are put in the `$ROOT_DIR/datasets/COVID-19-CT100/tr_mask` folde, and the tranining/testing data lists are put in the folder of `$ROOT_DIR/datasets/COVID-19-CT100/dataList`.
+
+For convenience, we provide our data on [Google Drive](https://drive.google.com/file/d/1RG4A7VGweRmykuCFHF9D_vJsDrELzqrg/view?usp=sharing) and [Baidu Yunpan](https://pan.baidu.com/s/17LL32SWzorq1D2FgZLkJcg) (提取码：vavt). Please download it and unzip it into the `$ROOT_DIR` directory.
 
 #### Testing MiniSeg
 
 For example, we use the following command to test MiniSeg on the COVID-19-CT100 dataset:
 
   ```
-  python test.py --model_name MiniSeg --data_name CT100 --pretrained results_MiniSeg_crossVal_mod80/ --savedir ./outputs
+  python test.py --model_name MiniSeg --data_name CT100 --pretrained Pretrained/COVID-19-CT100/<MODEL_NAME> --savedir ./outputs
   ```
 
-The generated segmentation maps of five folds will be outputted into the folder of ./outputs/CT100/MiniSeg/crossVal0~crossVal4, respectively.
+The generated segmentation maps of five folds will be outputted into the folder of `$ROOT_DIR/outputs/CT100/MiniSeg/crossVal0~crossVal4`, respectively.
 
 #### Training MiniSeg
 
