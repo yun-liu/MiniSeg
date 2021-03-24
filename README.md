@@ -17,7 +17,13 @@ If you are using the code/model/data provided here in a publication, please cons
 
 We adopt a 5-fold cross validation to evaluate the proposed MiniSeg. The precomputed segmentation maps of five folds on four datasets are provided in the [`SegMaps`](https://github.com/yun-liu/MiniSeg/tree/master/SegMaps) folder.
 
+### Pretrained models
+
+The pretrained models of five folds on four datasets are provided in the [`Pretrained`](https://github.com/yun-liu/MiniSeg/tree/master/Pretrained) folder.
+
 ### Testing and training
+
+We use Python 3.5, PyTorch 0.4.1, cuda 9.0, and numpy 1.17.3 to test the code. The `train.py` script is for training, and the `test.py` script is for testing.
 
 Before running the code, you should first put the images, masks and data lists to corresponding datasets folder. For examples, for COVID-19-CT100 dataset, the images are put in the /datasets/COVID-19-CT100/tr_im folder, the masks are put in the /datasets/COVID-19-CT100/tr_mask folde, and the tranining/testing data lists are put in the folder of /datasets/COVID-19-CT100/dataList.
 
@@ -25,18 +31,14 @@ Before running the code, you should first put the images, masks and data lists t
 
 For example, we use the following command to test MiniSeg on the COVID-19-CT100 dataset:
 
-python test.py --model_name MiniSeg --data_name CT100 --pretrained results_MiniSeg_crossVal_mod80/ --savedir ./outputs
+    ```
+    python test.py --model_name MiniSeg --data_name CT100 --pretrained results_MiniSeg_crossVal_mod80/ --savedir ./outputs
+    ```
 
 The generated segmentation maps of five folds will be outputted into the folder of ./outputs/CT100/MiniSeg/crossVal0~crossVal4, respectively.
 
 #### Training MiniSeg
 
-python train.py --max_epochs 80 --batch_size 5 --lr 1e-3 --lr_mode poly --savedir ./results_MiniSeg_crossVal --model_name MiniSeg --data_name CT100
-
-### Pretrained models
-
-The pretrained models of five folds on four datasets are provided in the [`Pretrained`](https://github.com/yun-liu/MiniSeg/tree/master/Pretrained) folder.
-
-### Running the code
-
-We use Python 3.5, PyTorch 0.4.1, cuda 9.0, and numpy 1.17.3 to test the code. The `train.py` script is for training, and the `test.py` script is for testing.
+    ```
+    python train.py --max_epochs 80 --batch_size 5 --lr 1e-3 --lr_mode poly --savedir ./results_MiniSeg_crossVal --model_name MiniSeg --data_name CT100
+    ```
