@@ -6,6 +6,14 @@ The rapid spread of the new pandemic, i.e., COVID-19, has severely threatened gl
 
 If you are using the code/model/data provided here in a publication, please consider citing:
 
+    @article{qiu2022miniseg,
+      title={MiniSeg: An Extremely Minimum Network Based on Lightweight Multiscale Learning for Efficient COVID-19 Segmentation},
+      author={Qiu, Yu and Liu, Yun and Li, Shijie and Xu, Jing},
+      journal={IEEE Transactions on Neural Networks and Learning Systems},
+      year={2022},
+      publisher={IEEE}
+    }
+
     @inproceedings{qiu2021miniseg,
       title={Mini{S}eg: An Extremely Minimum Network for Efficient {COVID}-19 Segmentation},
       author={Qiu, Yu and Liu, Yun and Li, Shijie and Xu, Jing},
