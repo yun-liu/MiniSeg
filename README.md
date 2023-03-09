@@ -15,7 +15,7 @@ If you are using the code/model/data provided here in a publication, please cons
     }
 
     @inproceedings{qiu2021miniseg,
-      title={Mini{S}eg: An Extremely Minimum Network for Efficient {COVID}-19 Segmentation},
+      title={MiniSeg: An Extremely Minimum Network for Efficient {COVID}-19 Segmentation},
       author={Qiu, Yu and Liu, Yun and Li, Shijie and Xu, Jing},
       booktitle={AAAI Conference on Artificial Intelligence},
       pages={4846--4854},
